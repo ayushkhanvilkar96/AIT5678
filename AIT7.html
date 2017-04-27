@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>AIT</title>
+
+    <link href="" rel="stylesheet">
+
+    <style type="text/css">
+        body{
+            background: #FFFFFF;
+        }
+
+        .a{
+            padding-left: 280px;
+        }
+        p, h1, header, footer, ul {
+            font-family: Arial;
+            font-size: 20px;
+
+        }
+
+
+        header{
+            height: 150px;
+            clear: left;
+            text-align: center;
+            border: 1px solid #CCC;
+            background: black;
+            color:white;
+            max-width: 960px;
+        }
+
+        footer{
+            height: 100px;
+            clear: left;
+            text-align: center;
+            border: 1px solid #CCC;
+            background: black;
+            color: white;
+            max-width: 960px;
+        }
+
+        nav{
+            float: left;
+            max-width: 300px;
+            margin: 0;
+            padding: 1em;
+            padding-top: 30px;
+        }
+
+        article {
+            margin-left: 170px;
+            border-left: 1px solid gray;
+            padding: 1em;
+            overflow: hidden;
+            max-width: 600px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: black;
+        }
+
+        li {
+            float: left;
+        }
+        
+        li a{
+            display: block;
+            color:white;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
+        
+    .square{
+     width: 100px;
+     height: 100px;
+     background-color: aliceblue;
+     position:relative;
+     animation-name: example;
+     animation-duration: 4s;
+     animation-iteration-count: 3;
+     animation-direction: alternate;
+        }
+        
+        @keyframes example{
+            0%{background-color: aqua; left:0px; top:0px;} 
+            25%{background-color: gold; left:200px; top:0px;}
+            50%{background-color: palevioletred; left:200px; top:200px;}   
+            75%{background-color: brown; left:0px; top:200px;}   
+            100%{background-color: palegreen; left:0px; top:0px;}   
+        }
+        
+        
+        #animation{
+       width:100px;
+        height:50px;
+        background-color: greenyellow;
+        font-weight:bold;
+        position:relative;
+        animation: mymove 5s infinite;
+    }
+        
+ #div1 {animation-timing-function: linear; }
+ #div2 {animation-timing-function: ease; }
+ #div3 {animation-timing-function: ease-in; }
+ #div4 {animation-timing-function: ease-out; }
+ #div5 {animation-timing-function: ease-in-out; }
+        
+@keyframes mymove {
+    from{left:0px;}
+    to{left: 900px;}
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+<div class="a">
+<header><h1>Virat Kohli</h1> Header
+<hr>
+<ul>
+  <li><a href="#stats">Stats</a></li>
+  <li><a href="#Info">Info</a></li>
+  <li><a href="#Personal">Personal</a></li>
+  </ul>
+</header>
+
+<nav>
+<h1>Sidebar</h1>
+<p>Kohli has been the recipient of many awards such as the ICC ODI Player of the Year in 2012 and the BCCI's international cricketer of the year.</p>
+</nav>
+
+<article>
+  <h1>Virat Kohli</h1>
+    <center><img src="img.jpg" class="square"></center>
+  <p>Kohli was appointed vice-captain of the ODI team in 2012, and handed over the Test captaincy following Mahendra Singh Dhoni's Test retirement in 2014.
+   In early 2017, he became the limited-overs captain as well after Dhoni stepped down from the position. Kohli holds numerous Indian batting records including the fastest ODI century, the fastest batsman to 5,000 ODI runs and the fastest to 10 ODI centuries. </p>
+   <p>Born and raised in Delhi, Kohli represented the city's cricket team at various age-group levels before making his first-class debut in 2006. He captained India Under-19s to victory at the 2008 Under-19 World Cup in Malaysia, and a few months later, made his ODI debut for India against Sri Lanka at the age of 19. </p>
+    <div id="animation">
+    <div id="div1">linear</div>
+    <div id="div2">ease</div>
+    <div id="div3">ease-in</div>
+    <div id="div4">ease-out</div>
+    <div id="div5">ease-in-out</div>
+    </div>
+
+
+</article>
+
+<footer><h1>Copyright &copy; pranav dange</h1> Footer</footer>
+</div>
+
+
+    <script></script>
+
+
+
+</body>
+
+</html>
